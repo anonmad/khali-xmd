@@ -52,7 +52,7 @@ async (conn, mek, m, { q, command, isCreator, reply }) => {
 
         return reply(`
 ╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ ⊱┈─̇─̣╌
+│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌
 │─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣
 │❀ ✅ Reaction Sent Successfully
 │❀ 📢 Channel: ${channelMeta.name}
