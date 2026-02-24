@@ -4,14 +4,14 @@ const { cmd } = require("../command");
 // ADEEL-MD stylish captions (ROTATING)
 const fbTitles = [
 `╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
-│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ ⊱┈─̇─̣╌
+│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌
 │─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣
 │❀ 📥 Facebook Video
 │❀ ✅ Download Successful
 │❀ ⚡ Quality: HD
 ╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
 
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ`,
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃`,
 
 `╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
 │ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ ⊱┈─̇─̣╌
@@ -21,7 +21,7 @@ const fbTitles = [
 │❀ 📦 No Watermark
 ╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
 
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ`
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃`
 ];
 
 let fbTitleIndex = 0;
@@ -41,7 +41,7 @@ cmd({
     if (!fbUrl || !fbUrl.includes("facebook.com")) {
       return reply(
 `╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
-│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ ⊱┈─̇─̣╌
+│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌
 │─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣
 │❌ Invalid Facebook URL
 │✎ Example:
@@ -55,7 +55,7 @@ cmd({
     await conn.sendMessage(from, {
       text:
 `╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
-│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ ⊱┈─̇─̣╌
+│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌
 │─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣
 │🔍 Processing Link
 │📥 Fetching Video
@@ -69,7 +69,7 @@ cmd({
     if (!data || data.status !== true || !data.download_url) {
       return reply(
 `╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
-│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ ⊱┈─̇─̣╌
+│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌
 │─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣
 │❌ Download Failed
 │⚠️ Video may be private
@@ -92,7 +92,7 @@ cmd({
     console.error("FB ERROR:", err);
     reply(
 `╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
-│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ ⊱┈─̇─̣╌
+│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌
 │─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣
 │❌ Facebook Download Error
 │⏳ Try again later
