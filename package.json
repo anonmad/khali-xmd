@@ -1,12 +1,12 @@
 {
-  "name": "ADEEL-AI",
+  "name": "𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃",
   "version": "5.0.0",
-  "description": "A WhatsApp Bot Created By Adeel Ai",
+  "description": "A WhatsApp Bot Created By mselachui-teach",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name ADEEL-AI",
-    "stop": "pm2 stop ADEEL-AI",
-    "restart": "pm2 restart ADEEL-AI"
+    "start": "pm2 start index.js --deep-monitoring --attach --name 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃",
+    "stop": "pm2 stop 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃",
+    "restart": "pm2 restart 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "v7.0.0-rc.6",
