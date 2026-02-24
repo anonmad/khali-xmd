@@ -23,7 +23,7 @@ async (conn, mek, m, { from, reply }) => {
         const caption = `
 ┌───〔 💻 TERMINAL STATUS // ROOT ACCESS 〕───┐
 │
-│ 👤 USER      :: ᗩᗪᗴᗴᒪ-᙭ᗰᗪ _⁸⁷³
+│ 👤 USER      :: 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 _⁸⁷³
 │ ─────────────────────────────────────
 │ ⚡ SPEED     :: ${speed} ms
 │ 🧠 UPTIME    :: ${runtime(process.uptime())}
@@ -34,7 +34,7 @@ async (conn, mek, m, { from, reply }) => {
 ├──────────────────────────────────────
 │ 🟢 STATUS    :: ONLINE
 │ 🔐 ACCESS    :: GRANTED
-└───〔 ⚔️ MAFIA ADEEL CORE 〕───┘
+└───〔 ⚔️ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 CORE 〕───┘
 
 > [ SYSTEM READY FOR COMMANDS... ]
 `;
@@ -46,8 +46,8 @@ async (conn, mek, m, { from, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363423571792427@newsletter',
-                    newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                    newsletterJid: '120363423019441144@newsletter',
+                    newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
                     serverMessageId: 143
                 }
             }
@@ -89,7 +89,7 @@ async (conn, mek, m, { from, reply }) => {
 
         const msg = `
 *╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-*│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ-᙭ᗰᗪ  ⊱┈─̇─̣╌*
+*│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃  ⊱┈─̇─̣╌*
 *│─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣*
 *│⚡ 𝐐𝐔𝐈𝐂𝐊 𝐏𝐈𝐍𝐆*
 *│*
@@ -98,7 +98,7 @@ async (conn, mek, m, { from, reply }) => {
 *│📦 𝐕𝐞𝐫𝐬𝐢𝐨𝐧:* v${config.VERSION || "5.0.0"}
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
 
-> 📌 ᴘᴏᴡᴇʀ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ
+> 📌 ᴘᴏᴡᴇʀ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃
 `;
 
         await conn.sendMessage(from, {
@@ -108,8 +108,8 @@ async (conn, mek, m, { from, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363423571792427@newsletter',
-                    newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                    newsletterJid: '120363423019441144@newsletter',
+                    newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
                     serverMessageId: 143
                 }
             }
