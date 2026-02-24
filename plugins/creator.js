@@ -6,21 +6,21 @@ cmd({
     alias: ["coder", "dev", "owner"],
     desc: "Show bot creator information",
     category: "info",
-    react: "👑",
+    react: "🐯",
     filename: __filename
 }, async (conn, mek, m, { from, sender, reply }) => {
     try {
 
         const ownerInfo = {
-            name: "ᗩᗪᗴᗴᒪ ᙭ᗰᗪ",
-            number: "+92 317 4838990",
-            photo: "https://files.catbox.moe/qj4dc0.jpg",
-            bio: "Founder & Developer of ADEEL-MD³⁰³"
+            name: "MSELACHUI-TECH",
+            number: "+260769355624",
+            photo: "https://files.catbox.moe/qyskpc.jpg",
+            bio: "Founder & Developer of 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃³⁰³"
         };
 
         const caption = `
 *╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-*│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ ⊱┈─̇─̣╌*
+*│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌*
 *│─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣*
 *│❀ 👑 𝐂𝐫𝐞𝐚𝐭𝐨𝐫:* ${ownerInfo.name}
 *│❀ 📞 𝐍𝐮𝐦𝐛𝐞𝐫:* ${ownerInfo.number}
@@ -30,7 +30,7 @@ cmd({
 *│❀ ⚡ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧:* ${config.VERSION || "5.0.0"}
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
 
-> 📌 ᴘᴏᴡᴇʀ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ
+> 📌 ᴘᴏᴡᴇʀ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃
 `;
 
         await conn.sendMessage(from, {
@@ -41,8 +41,8 @@ cmd({
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363423571792427@newsletter',
-                    newsletterName: 'ᗩᗪᗴᗴᒪ ᙭ᗰᗪ',
+                    newsletterJid: '120363423019441144@newsletter',
+                    newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
                     serverMessageId: 143
                 }
             }
@@ -52,12 +52,12 @@ cmd({
         console.error("CREATOR ERROR:", err);
         reply(
 `*╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-*│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ ⊱┈─̇─̣╌*
+*│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌*
 *│❌ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐄𝐫𝐫𝐨𝐫*
 *│⏳ Please try again later*
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
 
-> 📌 ᴘᴏᴡᴇʀ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ
+> 📌 ᴘᴏᴡᴇʀ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃
         );
     }
 });
