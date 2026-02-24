@@ -12,7 +12,7 @@ cmd({
     pattern: "play",
     alias: ["song", "audio"],
     react: "🎵",
-    desc: "Play song with ADEEL Xmd style (FFmpeg fixed)",
+    desc: "Play song with MSELA-CHUI Xmd style (FFmpeg fixed)",
     category: "download",
     use: ".play <song name>",
     filename: __filename
@@ -42,7 +42,7 @@ cmd({
         await conn.sendMessage(from, {
             image: { url: video.thumbnail },
             caption: `
-ᗩᗪᗴᗴᒪ-᙭ᗰᗪ 
+𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 
 
 ╭───────────────────
 │ 🎧 *SONG FOUND*
@@ -53,7 +53,7 @@ cmd({
 │
 │ ⏳ *Converting to MP3...*
 ╰───────────────────
-- _📌 ᴘᴏᴡᴇʀ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ_
+- _📌 ᴘᴏᴡᴇʀ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃_
 `
         }, { quoted: mek });
 
