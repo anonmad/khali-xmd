@@ -33,7 +33,7 @@ cmd({
 
     // Create the response message
     const message = `
-*ADEEL-MD NPM SEARCH*
+*𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 NPM SEARCH*
 *🔰 NPM PACKAGE:* ${packageName}
 *📄 DESCRIPTION:* ${description}
 *⏸️ LAST VERSION:* ${latestVersion}
