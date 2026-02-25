@@ -3,10 +3,10 @@ const os = require("os");
 
 cmd({
     pattern: "adeel",
-    alias: ["mafia"],
+    alias: ["chui"],
     desc: "Adeel full introduction",
     category: "info",
-    react: "👑",
+    react: "🐯",
     filename: __filename
 }, async (conn, mek, m, { from }) => {
     try {
@@ -18,18 +18,18 @@ cmd({
 
         const text = `
 ╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
-│ ╌─̇─̣⊰ ᗩᗪᗴᗴᒪ ᙭ᗰᗪ _³⁰³_ ⊱┈─̇─̣╌
+│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 _³⁰³_ ⊱┈─̇─̣╌
 │─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣
-│❀ 👤 *Name:* ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ
-│❀ 🧑‍💼 *Nick:* ᴀᴅᴇᴇʟ ᴋʜᴀɴ
+│❀ 👤 *Name:* mselachui 
+│❀ 🧑‍💼 *Nick:* 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃
 │❀ 🎂 *Age:* 19
-│❀ 🧬 *Caste:* sᴀʙǫɪ
-│❀ 🌍 *Country:* ᴘᴀᴋɪsᴛᴀɴ
-│❀ 🏙️ *City:* (ᴊᴀᴍᴘᴜʀ ʀᴀᴊᴀɴᴘᴜʀ)
+│❀ 🧬 *Caste:* KINGᴀʙǫɪ
+│❀ 🌍 *Country:* Tanzania 🇹🇿
+│❀ 🏙️ *City:* (UYOLE MBEYA TZ)
 │
-│❀ 🤖 *Bot Name:* ᴀᴅᴇᴇʟ-xᴍᴅ
-│❀ 👑 *Owner:* ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ
-│❀ 📞 *Owner No:* +923174838999
+│❀ 🤖 *Bot Name:* 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃
+│❀ 👑 *Owner:* mselachui
+│❀ 📞 *Owner No:* +260769355624
 │❀ 🔣 *Prefix:* .
 │❀ ⚙️ *Mode:* ᴘᴜʙʟɪᴄ
 │❀ 🔌 *Baileys:* ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ
@@ -38,7 +38,7 @@ cmd({
 │❀ 💻 *Platform:* ${os.platform()}
 ╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
 
-> 📌 ᴘᴏᴡᴇʀ ʙʏ *ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ**
+> 📌 ᴘᴏᴡᴇʀ ʙʏ *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃*
 `;
 
         await conn.sendMessage(from, {
