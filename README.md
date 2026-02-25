@@ -55,8 +55,6 @@
   <a href="https://whatsapp.com/channel/0029Vb6Thzr90x2zmqGF9G0J">  
     <img src="https://img.shields.io/badge/Join-Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />  
   </a>  
-   src="https://img.shields.io/badge/Contact-Owner-ff0000?style=for-the-badge&logo=whatsapp&logoColor=white" />  
-  </a>  
 </p>  
 <p align="center">📢 sᴛᴀʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴡɪᴛʜ <b>ᴄʜᴀɴɴᴇʟ</b> 
   
