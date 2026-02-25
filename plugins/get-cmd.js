@@ -39,19 +39,19 @@ ${truncatedCode}
 \`\`\`
 ╰──────────⊷  
 ⚡ Full file sent below 📂  
-Powered By *ADEEL-MD³⁰³* 👑`;
+Powered By *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃³⁰³* 👑`;
 
         // Send image with truncated source code
         await conn.sendMessage(from, { 
-            image: { url: `https://files.catbox.moe/qj4dc0.jpg` },  // Image URL
+            image: { url: `https://files.catbox.moe/qyskpc.jpg` },  // Image URL
             caption: formattedCode,
             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363423571792427@newsletter',
-                    newsletterName: 'ᗩᗪᗴᗴᒪ ᙭ᗰᗪ',
+                    newsletterJid: '120363423019441144@newsletter',
+                    newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
                     serverMessageId: 143
                 }
             }
