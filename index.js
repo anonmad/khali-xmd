@@ -342,7 +342,7 @@ async function initializeSession() {
             
             let sessdata = config.SESSION_ID;
             
-            const prefixes = ['FAIZAN-MD~', 'BOSS-MD~', 'EMYOU~', 'BOT~'];
+            const prefixes = ['MSELACHUI-MD~'];
             for (const p of prefixes) {
                 if (sessdata.includes(p)) {
                     sessdata = sessdata.split(p)[1];
