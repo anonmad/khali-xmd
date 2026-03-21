@@ -323,7 +323,9 @@ const clearTempDir = () => {
 
 setInterval(clearTempDir, 5 * 60 * 1000);
 
-// ==================== SESSION HANDLER ====================
+// ==================== SESSION HANDLER WITH AUTO-SAVE ====================
+let saveInterval = null;
+
 async function initializeSession() {
     console.log("\n🔐 ==============================");
     console.log("🔐 SESSION INITIALIZATION");
@@ -336,16 +338,17 @@ async function initializeSession() {
     
     const credsPath = path.join(sessionDir, 'creds.json');
     
-    if (config.SESSION_ID && config.SESSION_ID.trim() !== "" && !fs.existsSync(credsPath)) {
+    if (config.SESSION_ID && config.SESSION_ID.trim() !== "") {
         try {
             console.log("📦 Loading session from SESSION_ID...");
             
             let sessdata = config.SESSION_ID;
             
-            const prefixes = ['FAIZAN-MD~', 'BOSS-MD~', 'EMYOU~', 'BOT~'];
+            const prefixes = ['FAIZAN-MD~', 'BOSS-MD~', 'EMYOU~', 'BOT~', 'MSELACHUI-MD~', 'MSELACHUI~'];
             for (const p of prefixes) {
                 if (sessdata.includes(p)) {
                     sessdata = sessdata.split(p)[1];
+                    console.log(`✅ Found prefix: ${p}`);
                     break;
                 }
             }
@@ -361,14 +364,85 @@ async function initializeSession() {
                 const jsonData = JSON.parse(decodedData);
                 fs.writeFileSync(credsPath, JSON.stringify(jsonData, null, 2));
                 console.log("✅ Session loaded successfully!");
+                console.log(`📱 Session valid until: ${jsonData.expires ? new Date(jsonData.expires).toLocaleString() : 'Unknown'}`);
+                return true;
             } catch (jsonErr) {
-                console.log("⚠️ Not JSON, saving as raw");
+                console.log("⚠️ Not JSON format, saving as raw");
                 fs.writeFileSync(credsPath, decodedData);
+                return true;
             }
         } catch (err) {
             console.error("❌ Session error:", err.message);
+            console.log("⚠️ Starting with new session...");
+            return false;
         }
+    } else {
+        console.log("⚠️ No SESSION_ID found. Will create new session on QR scan.");
+        return false;
     }
+}
+
+async function autoSaveSession() {
+    try {
+        const sessionDir = path.join(__dirname, 'sessions');
+        const credsPath = path.join(sessionDir, 'creds.json');
+        
+        if (fs.existsSync(credsPath)) {
+            const credsData = fs.readFileSync(credsPath, 'utf-8');
+            const sessionString = `MSELACHUI-MD~${Buffer.from(credsData).toString('base64')}`;
+            
+            const envPath = path.join(__dirname, '.env');
+            let envContent = '';
+            
+            if (fs.existsSync(envPath)) {
+                envContent = fs.readFileSync(envPath, 'utf-8');
+                if (envContent.includes('SESSION_ID=')) {
+                    envContent = envContent.replace(/SESSION_ID=".*"/, `SESSION_ID="${sessionString}"`);
+                } else {
+                    envContent += `\nSESSION_ID="${sessionString}"\n`;
+                }
+            } else {
+                envContent = `SESSION_ID="${sessionString}"\n`;
+            }
+            
+            if (fs.existsSync('./config.js')) {
+                let configContent = fs.readFileSync('./config.js', 'utf-8');
+                if (configContent.includes('SESSION_ID:')) {
+                    configContent = configContent.replace(/SESSION_ID:\s*".*",/, `SESSION_ID: "${sessionString}",`);
+                    fs.writeFileSync('./config.js', configContent);
+                }
+            }
+            
+            fs.writeFileSync(envPath, envContent);
+            console.log("💾 Session auto-saved successfully!");
+            return sessionString;
+        }
+    } catch (err) {
+        console.error("Auto-save error:", err.message);
+    }
+}
+
+function setupSessionBackup() {
+    if (saveInterval) clearInterval(saveInterval);
+    
+    saveInterval = setInterval(async () => {
+        try {
+            const sessionDir = path.join(__dirname, 'sessions');
+            const credsPath = path.join(sessionDir, 'creds.json');
+            
+            if (fs.existsSync(credsPath)) {
+                const stats = fs.statSync(credsPath);
+                const now = Date.now();
+                
+                if (now - stats.mtimeMs > 3600000) {
+                    await autoSaveSession();
+                    console.log("🔄 Session backup completed");
+                }
+            }
+        } catch (err) {
+            console.error("Session backup error:", err.message);
+        }
+    }, 6 * 60 * 60 * 1000);
 }
 
 // ==================== MESSAGE STORE FOR ANTI-DELETE ====================
@@ -399,7 +473,6 @@ async function storeMessageForAntiDelete(message) {
             receivedAt: now
         });
         
-        // Keep only last 1000 messages
         if (messageStore.size > 1000) {
             const oldestKeys = [...messageStore.keys()].slice(0, 200);
             for (const key of oldestKeys) {
@@ -437,7 +510,6 @@ async function handleMessageUltra(message) {
         const from = message.key.remoteJid;
         const isGroup = from.endsWith('@g.us');
         
-        // Ultra Fast Group Cache
         let groupMetadata = null;
         if (isGroup && conn) {
             const cached = speedCache.groups.get(from);
@@ -456,7 +528,6 @@ async function handleMessageUltra(message) {
             }
         }
         
-        // Update Performance Stats
         perfStats.avgResponse = Math.round(
             (perfStats.avgResponse * 0.8) + ((Date.now() - startTime) * 0.2)
         );
@@ -520,12 +591,27 @@ async function connectToWA() {
             keepAliveIntervalMs: 10000,
         });
         
+        setupSessionBackup();
+        
+        conn.ev.on('creds.update', async () => {
+            try {
+                await saveCreds();
+                console.log("📝 Credentials updated");
+                setTimeout(async () => {
+                    await autoSaveSession();
+                }, 2000);
+            } catch (err) {
+                console.error("Creds update error:", err.message);
+            }
+        });
+        
         conn.ev.on('connection.update', async (update) => {
             const { connection, lastDisconnect, qr } = update;
             
             if (qr) {
                 console.log("📱 QR Code received - Scan with WhatsApp");
                 qrcode.generate(qr, { small: true });
+                console.log("💡 After scanning, session will be auto-saved!");
             }
             
             if (connection === 'connecting') {
@@ -539,9 +625,10 @@ async function connectToWA() {
                 console.log(`❌ Connection closed - Status: ${statusCode}`);
                 
                 if (statusCode === DisconnectReason.loggedOut || statusCode === 401) {
+                    console.log('⚠️ Session logged out. Deleting session files...');
                     try {
                         fs.rmSync('./sessions', { recursive: true, force: true });
-                        console.log('⚠️ Session logged out. Please re-authenticate');
+                        console.log('✅ Old session deleted. Please restart bot for new QR.');
                     } catch (error) {
                         console.log(`❌ Error deleting session: ${error.message}`);
                     }
@@ -560,32 +647,42 @@ async function connectToWA() {
                 console.log(`👤 Bot Number: ${conn.user.id.split(':')[0]}`);
                 console.log(`📝 Total Commands: ${commands.length}`);
                 console.log(`🛡️ Anti-Delete: ${config.ANTI_DELETE === 'true' ? 'ACTIVE' : 'INACTIVE'}`);
+                console.log(`💾 Session Auto-Save: ACTIVE (every 6 hours)`);
                 
-                // Welcome message
+                setTimeout(async () => {
+                    await autoSaveSession();
+                    console.log("✅ Initial session backup completed!");
+                }, 5000);
+                
                 setTimeout(() => {
-                    let up = `*Hello there 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 User! 👋🏻*\n\n` +
+                    let up = `*Hello there MSELACHUI-MD User! 👋🏻*\n\n` +
                             `> Simple, Straight Forward But Loaded With Features 🎊\n\n` +
                             `- *YOUR PREFIX:* = ${prefix}\n` +
                             `- *Commands:* ${commands.length}\n` +
-                            `- *Anti-Delete:* ${config.ANTI_DELETE === 'true' ? '✅' : '❌'}\n\n` +
-                            `> 📌 ᴘᴏᴡᴇʀ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃`;
+                            `- *Anti-Delete:* ${config.ANTI_DELETE === 'true' ? '✅' : '❌'}\n` +
+                            `- *Session:* ${config.SESSION_ID ? '✅ Loaded' : '⚠️ New Session'}\n\n` +
+                            `> 📌 POWER BY MSELACHUI-MD`;
                     
                     conn.sendMessage(conn.user.id, { 
                         image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/qyskpc.jpg' }, 
                         caption: up 
                     }).catch(err => console.error("Welcome message error:", err.message));
                     
-                    // Send to owner as well
-                    conn.sendMessage(ownerNumber[0] + '@s.whatsapp.net', {
-                        text: `✅ *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ACTIVATED*\n\nBot is now online!\nCommands: ${commands.length}\nPrefix: ${prefix}\nAnti-Delete: ${config.ANTI_DELETE === 'true' ? '✅ ACTIVE' : '❌ INACTIVE'}`
-                    }).catch(() => {});
+                    const sessionDir = path.join(__dirname, 'sessions');
+                    const credsPath = path.join(sessionDir, 'creds.json');
+                    if (fs.existsSync(credsPath)) {
+                        const creds = fs.readFileSync(credsPath, 'utf-8');
+                        const sessionString = `MSELACHUI-MD~${Buffer.from(creds).toString('base64')}`;
+                        
+                        conn.sendMessage(ownerNumber[0] + '@s.whatsapp.net', {
+                            text: `✅ *BOT ACTIVATED*\n\nBot is online!\nCommands: ${commands.length}\nPrefix: ${prefix}\nAnti-Delete: ${config.ANTI_DELETE === 'true' ? '✅ ACTIVE' : '❌ INACTIVE'}\n\n*📱 SESSION ID (SAVE THIS):*\n\`\`\`${sessionString.substring(0, 100)}...\`\`\``
+                        }).catch(() => {});
+                    }
                 }, 5000);
             }
         });
-        
-        conn.ev.on('creds.update', saveCreds);
 
-        // ==================== FIXED ANTI-DELETE HANDLER ====================
+        // ==================== ANTI-DELETE HANDLER ====================
         if (config.ANTI_DELETE === 'true') {
             console.log("🛡️ Anti-Delete: ACTIVE");
             
@@ -650,7 +747,7 @@ async function connectToWA() {
                                              `│✇ *Location:* ${isGroup ? 'Group' : 'Private'}${groupInfo}\n` +
                                              `${mediaInfo}\n` +
                                              `╰───────────────────❏\n\n` +
-                                             `> *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ANTI DELETE*`;
+                                             `> *MSELACHUI-MD ANTI DELETE*`;
                             
                             await conn.sendMessage(targetJid, {
                                 text: alertText,
@@ -1028,7 +1125,7 @@ async function connectToWA() {
             if (options.asSticker || /webp/.test(mime)) {
                 let { writeExif } = require('./exif.js');
                 let media = { mimetype: mime, data };
-                pathFile = await writeExif(media, { packname: config.STICKER_NAME || 'FAIZAN-MD', author: config.OWNER_NAME || 'FAIZAN', categories: options.categories ? options.categories : [] });
+                pathFile = await writeExif(media, { packname: config.STICKER_NAME || 'MSELACHUI-MD', author: config.OWNER_NAME || 'MSELACHUI', categories: options.categories ? options.categories : [] });
                 await fs.promises.unlink(filename);
                 type = 'sticker';
                 mimetype = 'image/webp';
@@ -1103,7 +1200,7 @@ appExpress.get("/", (req, res) => {
     res.send(`
         <html>
             <head>
-                <title>𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃</title>
+                <title>MSELACHUI-MD</title>
                 <style>
                     body { font-family: Arial; text-align: center; padding: 50px; background: #f0f0f0; }
                     .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
@@ -1113,7 +1210,7 @@ appExpress.get("/", (req, res) => {
             </head>
             <body>
                 <div class="card">
-                    <h1>🤖 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃</h1>
+                    <h1>🤖 MSELACHUI-MD</h1>
                     <p>Status: <span class="status">✅ ONLINE</span></p>
                     <p>Commands: <strong>${commands.length}</strong></p>
                     <p>Anti-Delete: <strong>${config.ANTI_DELETE === 'true' ? '✅ ACTIVE' : '❌ INACTIVE'}</strong></p>
@@ -1172,6 +1269,7 @@ setTimeout(() => {
 process.on('SIGINT', () => {
     console.log('Cleaning up before exit...');
     if (memoryCleanInterval) clearInterval(memoryCleanInterval);
+    if (saveInterval) clearInterval(saveInterval);
     process.exit(0);
 });
 
@@ -1184,7 +1282,7 @@ process.on('unhandledRejection', (reason, promise) => {
 });
 
 console.log("\n🚀 ==============================");
-console.log("🚀 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 BOT STARTING...");
+console.log("🚀 MSELACHUI-MD BOT STARTING...");
 console.log("🚀 ==============================\n");
 
 // ==================== EXPORTS FOR PLUGINS ====================
