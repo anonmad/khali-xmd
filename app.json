@@ -1,8 +1,8 @@
 {
-  "name": "𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃",
-  "description": "Javascript WhatsApp bot made by MSELACHUI-TEACH",
-  "logo": "https://files.catbox.moe/qyskpc.jpg",
-  "keywords": ["𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃"],
+  "name": "𝐊𝐀𝐋𝐈-𝐌𝐃𝟏",
+  "description": "Javascript WhatsApp bot made by KHALI-OS",
+  "logo": "https://res.cloudinary.com/dzfc5yopz/image/upload/file_00000000d82c722faaf51d22b7f83ade_l03mq3.png",
+  "keywords": ["𝐊𝐀𝐋𝐈-𝐌𝐃𝟏"],
   "success_url": "/",
 
     "stack": "container",
@@ -10,37 +10,37 @@
     "SESSION_ID": {
       "description": "Put the session-id here,MSELACHUI-MD~eyJub---",
       "required": true,
-      "value": ""
+      "value": "EXPERT-MD%>eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiRUd1eksrUkNSUEgvYS9RcWEwZE9vWVRYNzJvRnFXcW5POEhsL0xzaU9FTT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiRDVNcmJxRUtaMkcra2FRWGJXYm1nUkJmK3I1Q2Fzemh4WVBzYldUZXd5VT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJhTFJLTlVXNDhuak9jNEMySkJFSzc2NVoxK1RIVEdyTGNnYlQrcWwzSWxNPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJDOE9JSEJsK2c5Q0VEQ1ZVU1R2L2VkckwxMDByUGZ4bStNUlJBeXFMSzJjPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkdNWDI5a0pyZ1FrNjJTS3A5cHc0TWxCblE0ZUJQVE4yVGx4WGFoYnZ5R0U9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Im9vR2s1RHhDSEdXa3JoZTh0OXAyR0NwS3JmbTNZRGxUZnhYTVNpalJ4bWc9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiaUJBT3JiSllFeXo1aWRKVTJnaWpCWnJDcHhuZm45dG5iaXlHMnhOejdXQT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiSmExVG14c1FObkNHYWFmSEJ2cStXR3FTTk9ZajVNOW5pRTNiSjdTQ0d4az0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjhDWjRBck5tWnB2dTBFTEUxUng5VGdhd3Y1bXplTmdQM0I0UWxvWXpubUd0TlJvSE5BWGVkVkRrbWp2OFVkUzEwL0R5MmZrN1NFZWdyekI3QzRzZmh3PT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6NzAsImFkdlNlY3JldEtleSI6InF6cDRYdHY3dFVwYUNTTzVRY2s2VWpWYnUrZnQzY2xYUXBESjUxMU91SmM9IiwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzIjpbeyJrZXkiOnsicmVtb3RlSmlkIjoiMjU1NjE5NjE1MDY1QHMud2hhdHNhcHAubmV0IiwiZnJvbU1lIjp0cnVlLCJpZCI6IkE1RTkxQ0Y5NDNDMEFEQjU5NEFBRjBBM0MyRjczMDM3In0sIm1lc3NhZ2VUaW1lc3RhbXAiOjE3NzQ0ODAwNzR9LHsia2V5Ijp7InJlbW90ZUppZCI6IjI1NTYxOTYxNTA2NUBzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiJBNUIzRDk3RkZBQzI0MzU3MjQzQzNFQzg3OThEQThGNyJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzc0NDgwMDc0fSx7ImtleSI6eyJyZW1vdGVKaWQiOiIyNTU2MTk2MTUwNjVAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiQTVEOTkzM0NGQ0NEMDM4REU5NkZBMzI3RjhCOERERDcifSwibWVzc2FnZVRpbWVzdGFtcCI6MTc3NDQ4MDA3NX0seyJrZXkiOnsicmVtb3RlSmlkIjoiMjU1NjE5NjE1MDY1QHMud2hhdHNhcHAubmV0IiwiZnJvbU1lIjp0cnVlLCJpZCI6IkE1RERFOTk0QUM4RTc3MEM1M0ZEOUZGQjA1MzRGOUVDIn0sIm1lc3NhZ2VUaW1lc3RhbXAiOjE3NzQ0ODAwNzV9LHsia2V5Ijp7InJlbW90ZUppZCI6IjI1NTYxOTYxNTA2NUBzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiJBNTlFOTZGNTZFMDQ4QUFERjE1MzMzMTI3NUY2OTIyQSJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzc0NDgwMTExfSx7ImtleSI6eyJyZW1vdGVKaWQiOiIyNTU2MTk2MTUwNjVAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiQTU2MjM4RDg3RDM5NUMzODA0QURCQTQxNkI5QTQ5RjkifSwibWVzc2FnZVRpbWVzdGFtcCI6MTc3NDQ4MDExM31dLCJuZXh0UHJlS2V5SWQiOjMxLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6MzEsImFjY291bnRTeW5jQ291bnRlciI6MSwiYWNjb3VudFNldHRpbmdzIjp7InVuYXJjaGl2ZUNoYXRzIjpmYWxzZX0sImRldmljZUlkIjoiNkhEYVAzMVlTSm1jeHBlVUQzY0xyUSIsInBob25lSWQiOiIyNjQwYmQ2NS05NDNjLTRiMDctOGU4ZS03YmYyZDkwZTg1YzEiLCJpZGVudGl0eUlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNGd6c2FoN3AzMkhIcUFXTjArZk5pTEFsSG84PSJ9LCJyZWdpc3RlcmVkIjpmYWxzZSwiYmFja3VwVG9rZW4iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJleHBnUEFYY01zYXVoVTlQQ2JQSlJpOTQ1dGs9In0sInJlZ2lzdHJhdGlvbiI6e30sImFjY291bnQiOnsiZGV0YWlscyI6IkNPcWI2N1lHRUxmVmtjNEdHQUVnQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiI3VlQ3K0UxRXJBM1Q3UzJIdTRQSlNZdlErSXZTaGpKRzI1d2liMWdvL3lRPSIsImFjY291bnRTaWduYXR1cmUiOiJTd1pYTHhyYkpwc2I3aUdGQjVESm5sQXkwZytnT2NaeCtSbGxHYnRhMDNiQWIrOXVocUU5dnhQa1dXeFFOZ3Z3VTh4MUNTR2VhN1lBSWhKT2xHZUlBdz09IiwiZGV2aWNlU2lnbmF0dXJlIjoicHFtTkNiR0JkRHFiU1BmZkUrUVcvUzNJVDYvV05HUTdTVzl2L0tFNU1CR1YvY2VRc2lYZEViM3NQcGQrNldqV2hXZGJaN1lMNlVBRmJ1ckxtVlJKaGc9PSJ9LCJtZSI6eyJpZCI6IjI1NTYxOTYxNTA2NTo0MkBzLndoYXRzYXBwLm5ldCIsIm5hbWUiOiLwnZCK8J2QmvCdkKXwnZCiLfCdkKjwnZCSLvCdkJ/wnZCo8J2QrvCdkKfwnZCdMCIsImxpZCI6IjI2ODMxMTUyMjc0NjQ4OTo0MkBsaWQifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjU1NjE5NjE1MDY1OjQyQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQmUxVSsvaE5SS3dOMCswdGg3dUR5VW1MMFBpTDBvWXlSdHVjSW05WUtQOGsifX1dLCJwbGF0Zm9ybSI6InNtYmEiLCJyb3V0aW5nSW5mbyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkNBSUlDQWdTIn0sImxhc3RBY2NvdW50U3luY1RpbWVzdGFtcCI6MTc3NDQ4MDA3MSwibGFzdFByb3BIYXNoIjoiM21sMWpTIiwibXlBcHBTdGF0ZUtleUlkIjoiQUFBQUFOc1MifQ=="
     },  
     
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
-      "required": false,
-      "value": "𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃"
+      "required": true,
+      "value": "𝐊𝐀𝐋𝐈-𝐌𝐃𝟏"
     }, 
       
     "PREFIX": {
       "description": "paste your bot prefix note! Don't apply null prefix.",
-      "required": false,
+      "required": true,
       "value": "."
     },
     
     "MODE": {
       "description": "select your bot work type public-private-inbox-group.",
-      "required": false,
+      "required": true,
       "value": "public"
       
     },
 
      "ANTI_DELETE": {
       "description": "set true for show deleted messages.",
-      "required": false,
+      "required": true,
       "value": "true"  
     },
     
     "ALWAYS_ONLINE": {
       "description": "Make it true if want always online.",
-      "required": false,
+      "required": true,
       "value": "true"  
     },    
    
@@ -52,8 +52,8 @@
 
     "AUTO_STICKER": {
       "description": "Make it true if you want automatic sticker.",
-      "required": false,
-      "value": "false"
+      "required": true,
+      "value": "true"
     }, 
 
 
@@ -72,33 +72,33 @@
     "AUTO_STATUS_REPLY": {
       "description": "Make it true for auto reply msg on status seen.",
       "required": true,
-      "value": "false"
+      "value": "true"
     }, 
 
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SEEN YOUR STATUS BY 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃🐯*"
+      "value": "*SEEN YOUR STATUS BY KHALI-OS*"
    
      }, 
     
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
-      "required": false,
-      "value": "*𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃*"
+      "required": true,
+      "value": "*𝐊𝐀𝐋𝐈-𝐌𝐃𝟏*"
 }, 
 
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
-      "required": false,
-      "value": "2607xxxxxxxx"
+      "required": true,
+      "value": "255619615065"
 
     }, 
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
-      "required": false,
-      "value": "𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃"
+      "required": true,
+      "value": "𝐊𝐀𝐋𝐈-𝐌𝐃𝟏"
 
       }, 
 
@@ -130,32 +130,32 @@
     
     "MENU_IMAGE_URL": {
       "description": "add url for mention reply and menu if want.",
-      "required": false,
-      "value": "https://files.catbox.moe/qyskpc.jpg"
+      "required": true,
+      "value": "https://res.cloudinary.com/dzfc5yopz/image/upload/file_00000000d82c722faaf51d22b7f83ade_l03mq3.png"
     },
     
      "DESCRIPTION": {
       "description": "add caption for menu and other",
-      "required": false,
-      "value": "*📌 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃*"
+      "required": true,
+      "value": "*📌 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏*"
     },
 
       "DELETE_LINKS": {
       "description": "remove links from group automatically without removing member",
-      "required": false,
+      "required": true,
       "value": "true"
     },
     
     "AUTO_RECORDING": {
       "description": "Make it true if you want auto recoding.",
-      "required": false,
-      "value": "false"
+      "required": true,
+      "value": "true"
     },
 
     "AUTO_TYPING": {
       "description": "Make it true if you want auto typing.",
-      "required": false,
-      "value": "false"
+      "required": true,
+      "value": "true"
     },
 
     "AUTO_REACT": {
@@ -166,8 +166,8 @@
     
     "CUSTOM_REACT": {
       "description": "Make it true if you want custom reactions.",
-      "required": false,
-      "value": "false"
+      "required": true,
+      "value": "true"
       
     }, 
     
@@ -185,20 +185,20 @@
 
     "ADMIN_EVENTS": {
       "description": "make it true if want know who promote or demote a member .",
-      "required": false,
-      "value": "false"
+      "required": true,
+      "value": "true"
     },
 
     "WELCOME": {
       "description": "make it true if want goodbye and welcome message in groups.",
-      "required": false,
-      "value": "false"
+      "required": true,
+      "value": "true"
     },
 
     "READ_MESSAGE": {
       "description": "Make it true if you want bot read your all sms just now.",
-      "required": false,
-      "value": "false"
+      "required": true,
+      "value": "true"
     }
 
 },
