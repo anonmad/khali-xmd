@@ -149,7 +149,7 @@ const speed = require('performance-now');
 // ==================== CONFIG ====================
 const config = require('./config');
 const prefix = config.PREFIX || '.';
-const ownerNumber = config.OWNER_NUMBER ? config.OWNER_NUMBER.split(',').map(n => n.trim()) : ['260769355624'];
+const ownerNumber = config.OWNER_NUMBER ? config.OWNER_NUMBER.split(',').map(n => n.trim()) : ['255619615065'];
 
 // ==================== COMMAND HANDLER ====================
 let commands = [];
@@ -655,13 +655,13 @@ async function connectToWA() {
                 }, 5000);
                 
                 setTimeout(() => {
-                    let up = `*Hello there MSELACHUI-MD User! 👋🏻*\n\n` +
+                    let up = `*Hello there KHALI-MD1 User! 👋🏻*\n\n` +
                             `> Simple, Straight Forward But Loaded With Features 🎊\n\n` +
                             `- *YOUR PREFIX:* = ${prefix}\n` +
                             `- *Commands:* ${commands.length}\n` +
                             `- *Anti-Delete:* ${config.ANTI_DELETE === 'true' ? '✅' : '❌'}\n` +
                             `- *Session:* ${config.SESSION_ID ? '✅ Loaded' : '⚠️ New Session'}\n\n` +
-                            `> 📌 POWER BY 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃`;
+                            `> 📌 POWER BY 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏`;
                     
                     conn.sendMessage(conn.user.id, { 
                         image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/qyskpc.jpg' }, 
@@ -747,7 +747,7 @@ async function connectToWA() {
                                              `│✇ *Location:* ${isGroup ? 'Group' : 'Private'}${groupInfo}\n` +
                                              `${mediaInfo}\n` +
                                              `╰───────────────────❏\n\n` +
-                                             `> *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ANTI DELETE*`;
+                                             `> *𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 ANTI DELETE*`;
                             
                             await conn.sendMessage(targetJid, {
                                 text: alertText,
@@ -804,7 +804,7 @@ async function connectToWA() {
                     ? message.message.ephemeralMessage.message 
                     : message.message;
                 
-                if (config.READ_MESSAGE === 'true') {
+                if (config.READ_MESSAGE === 'false') {
                     await conn.readMessages([message.key]).catch(() => {});
                 }
                 
@@ -1125,7 +1125,7 @@ async function connectToWA() {
             if (options.asSticker || /webp/.test(mime)) {
                 let { writeExif } = require('./exif.js');
                 let media = { mimetype: mime, data };
-                pathFile = await writeExif(media, { packname: config.STICKER_NAME || 'MSELACHUI-MD', author: config.OWNER_NAME || 'MSELACHUI', categories: options.categories ? options.categories : [] });
+                pathFile = await writeExif(media, { packname: config.STICKER_NAME || 'KHALI-MD1', author: config.OWNER_NAME || 'KHALI', categories: options.categories ? options.categories : [] });
                 await fs.promises.unlink(filename);
                 type = 'sticker';
                 mimetype = 'image/webp';
@@ -1200,7 +1200,7 @@ appExpress.get("/", (req, res) => {
     res.send(`
         <html>
             <head>
-                <title>MSELACHUI-MD</title>
+                <title>KHALI-MD1</title>
                 <style>
                     body { font-family: Arial; text-align: center; padding: 50px; background: #f0f0f0; }
                     .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
@@ -1210,7 +1210,7 @@ appExpress.get("/", (req, res) => {
             </head>
             <body>
                 <div class="card">
-                    <h1>🤖 MSELACHUI-MD</h1>
+                    <h1>🤖 KHALI-MD1</h1>
                     <p>Status: <span class="status">✅ ONLINE</span></p>
                     <p>Commands: <strong>${commands.length}</strong></p>
                     <p>Anti-Delete: <strong>${config.ANTI_DELETE === 'true' ? '✅ ACTIVE' : '❌ INACTIVE'}</strong></p>
@@ -1282,7 +1282,7 @@ process.on('unhandledRejection', (reason, promise) => {
 });
 
 console.log("\n🚀 ==============================");
-console.log("🚀 MSELACHUI-MD BOT STARTING...");
+console.log("🚀 KHALI-MD1 BOT STARTING...");
 console.log("🚀 ==============================\n");
 
 // ==================== EXPORTS FOR PLUGINS ====================
