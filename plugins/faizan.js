@@ -18,18 +18,18 @@ cmd({
 
         const text = `
 ╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
-│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 _³⁰³_ ⊱┈─̇─̣╌
+│ ╌─̇─̣⊰ 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 _³⁰³_ ⊱┈─̇─̣╌
 │─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣
-│❀ 👤 *Name:* mselachui 
-│❀ 🧑‍💼 *Nick:* 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃
-│❀ 🎂 *Age:* 20
-│❀ 🧬 *Caste:* KINGᴀʙǫɪ
+│❀ 👤 *Name:* Khali 
+│❀ 🧑‍💼 *Nick:* ¢нσℓσ
+│❀ 🎂 *Age:* 21
+│❀ 🧬 *Caste:* RedEYES
 │❀ 🌍 *Country:* Tanzania 🇹🇿
-│❀ 🏙️ *City:* (UYOLE MBEYA TZ)
+│❀ 🏙️ *City:* (GUNGU KGM TZ)
 │
-│❀ 🤖 *Bot Name:* 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃
-│❀ 👑 *Owner:* mselachui
-│❀ 📞 *Owner No:* +260769355624
+│❀ 🤖 *Bot Name:* 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏
+│❀ 👑 *Owner:* khali
+│❀ 📞 *Owner No:* +255619615065
 │❀ 🔣 *Prefix:* .
 │❀ ⚙️ *Mode:* ᴘᴜʙʟɪᴄ
 │❀ 🔌 *Baileys:* ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ
@@ -38,7 +38,7 @@ cmd({
 │❀ 💻 *Platform:* ${os.platform()}
 ╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭
 
-> 📌 ᴘᴏᴡᴇʀ ʙʏ *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃*
+> 📌 ᴘᴏᴡᴇʀ ʙʏ *𝐊𝐀𝐋𝐈-𝐌𝐃𝟏*
 `;
 
         await conn.sendMessage(from, {
