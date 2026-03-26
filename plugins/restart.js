@@ -3,7 +3,7 @@ const { sleep } = require("../lib/functions");
 
 cmd({  
     pattern: "restart",  
-    desc: "Restart 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃",  
+    desc: "Restart 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏",  
     category: "owner",  
     filename: __filename  
 },  
