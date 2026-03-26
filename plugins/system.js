@@ -45,9 +45,9 @@ async (conn, mek, m, { from, reply }) => {
 
         // Bot info
         const botInfo = {
-            name: config.BOT_NAME || "𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃",
+            name: config.BOT_NAME || "𝐊𝐀𝐋𝐈-𝐌𝐃𝟏",
             version: config.VERSION || "5.0.0",
-            creator: "𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰 🐯",
+            creator: "𝐊𝐀𝐋𝐈-𝐌𝐃𝟏",
             contact: "+260769355624"
         };
 
