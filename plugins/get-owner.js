@@ -11,7 +11,7 @@ cmd({
 async (conn, mek, m, { from }) => {
     try {
         const ownerNumber = config.OWNER_NUMBER;
-        const ownerName = config.OWNER_NAME || "𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 _³⁰³_";
+        const ownerName = config.OWNER_NAME || "𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 _³⁰³_";
 
         // vCard
         const vcard = 
@@ -25,7 +25,7 @@ END:VCARD`;
         // Styled caption message
         const caption = `
 *╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-*│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌*
+*│ ╌─̇─̣⊰ 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 ⊱┈─̇─̣╌*
 *│─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣*
 *│👑 𝐎𝐖𝐍𝐄𝐑 𝐂𝐎𝐍𝐓𝐀𝐂𝐓*
 *│*
@@ -35,7 +35,7 @@ END:VCARD`;
 *│💬 Tap contact to chat*
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
 
-> 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 _³⁰³_
+> 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 _³⁰³_
 `;
 
         // Send styled text
