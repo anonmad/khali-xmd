@@ -54,7 +54,7 @@ async (conn, mek, m, { from, reply, sender, args }) => {
             from,
             {
                 image: { 
-                    url: movie.poster && movie.poster !== 'N/A' ? movie.poster : 'https://files.catbox.moe/78gezo.jpg'
+                    url: movie.poster && movie.poster !== 'N/A' ? movie.poster : 'https://res.cloudinary.com/dzfc5yopz/image/upload/file_00000000d82c722faaf51d22b7f83ade_l03mq3.png'
                 },
                 caption: dec,
                 contextInfo: {
@@ -63,7 +63,7 @@ async (conn, mek, m, { from, reply, sender, args }) => {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423019441144@newsletter',
-                        newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
