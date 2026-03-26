@@ -23,7 +23,7 @@ async (conn, mek, m, { from, reply }) => {
         const caption = `
 ┌───〔 💻 TERMINAL STATUS // ROOT ACCESS 〕───┐
 │
-│ 👤 USER      :: 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 _⁸⁷³
+│ 👤 USER      :: 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 _⁸⁷³
 │ ─────────────────────────────────────
 │ ⚡ SPEED     :: ${speed} ms
 │ 🧠 UPTIME    :: ${runtime(process.uptime())}
@@ -34,7 +34,7 @@ async (conn, mek, m, { from, reply }) => {
 ├──────────────────────────────────────
 │ 🟢 STATUS    :: ONLINE
 │ 🔐 ACCESS    :: GRANTED
-└───〔 ⚔️ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 CORE 〕───┘
+└───〔 ⚔️ 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 CORE 〕───┘
 
 > [ SYSTEM READY FOR COMMANDS... ]
 `;
@@ -47,7 +47,7 @@ async (conn, mek, m, { from, reply }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363423019441144@newsletter',
-                    newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
+                    newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                     serverMessageId: 143
                 }
             }
@@ -89,7 +89,7 @@ async (conn, mek, m, { from, reply }) => {
 
         const msg = `
 *╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-*│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃  ⊱┈─̇─̣╌*
+*│ ╌─̇─̣⊰ 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏  ⊱┈─̇─̣╌*
 *│─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣*
 *│⚡ 𝐐𝐔𝐈𝐂𝐊 𝐏𝐈𝐍𝐆*
 *│*
@@ -98,7 +98,7 @@ async (conn, mek, m, { from, reply }) => {
 *│📦 𝐕𝐞𝐫𝐬𝐢𝐨𝐧:* v${config.VERSION || "5.0.0"}
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
 
-> 📌 ᴘᴏᴡᴇʀ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃
+> 📌 ᴘᴏᴡᴇʀ ʙʏ 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏
 `;
 
         await conn.sendMessage(from, {
@@ -109,7 +109,7 @@ async (conn, mek, m, { from, reply }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363423019441144@newsletter',
-                    newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
+                    newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                     serverMessageId: 143
                 }
             }
