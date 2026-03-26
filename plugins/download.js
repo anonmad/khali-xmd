@@ -249,7 +249,7 @@ cmd({
 ┃ 📅 *Updated On:* ${app.updated}
 ┃ 👨‍💻 *Developer:* ${app.developer.name}
 ╰━━━━━━━━━━━━━━━┈⊷
-🔗 **- _📌 ᴘᴏᴡᴇʀ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃_*`;
+🔗 **- _📌 ᴘᴏᴡᴇʀ ʙʏ 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏_*`;
 
     await conn.sendMessage(from, { react: { text: "⬆️", key: m.key } });
 
