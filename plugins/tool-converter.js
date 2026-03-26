@@ -35,7 +35,7 @@ cmd({
         // Send result
         await client.sendMessage(from, {
             image: imageBuffer,
-            caption: "> ᗩᗪᗴᗴᒪ-᙭ᗰᗪ",
+            caption: "> 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏",
             mimetype: 'image/png'
         }, { quoted: message });
 
