@@ -17,12 +17,12 @@ cmd({
         
         // Your existing menu caption
         const menuCaption = `╭━━ ⌜  *${config.BOT_NAME}* ⌟ ━━⊷❍
-┃ 👤 ʙᴏᴛ ᴏᴡɴᴇʀ: *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃*
+┃ 👤 ʙᴏᴛ ᴏᴡɴᴇʀ: *𝐊𝐀𝐋𝐈-𝐌𝐃𝟏*
 ┃ 🌍 ᴍᴏᴅᴇ: *ᴘᴜʙʟɪᴄ*
 ┃ 🔤 ᴘʀᴇғɪx: [ . ]
 ╰━━━━━━━━━━━━━━━━━━━⊷❍
 ╭─「 *𝚘𝚠𝚗𝚎𝚛* 」
-│ *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰🐯*
+│ *𝐊𝐀𝐋𝐈-𝐌𝐃𝟏*
 ╰───────────────⊷
 
 📜 *ᴄʜᴏɪᴄᴇ ᴄᴏᴍᴍᴀɴᴅ* 
@@ -230,7 +230,7 @@ cmd({
 │ .*𝚛𝚎𝚜𝚝𝚊𝚛𝚝*
 ╰───────────────⊷
 ╭─「 *KIᑎᘜ🔥* 」
-|  .*𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰🐯*
+|  .*𝐊𝐀𝐋𝐈-𝐌𝐃𝟏*
 ╰───────────────⊷
 > ${config.DESCRIPTION}`;
 
@@ -251,7 +251,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/78gezo.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://res.cloudinary.com/dzfc5yopz/image/upload/file_00000000d82c722faaf51d22b7f83ade_l03mq3.png' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -596,7 +596,7 @@ cmd({
                                 await conn.sendMessage(
                                     senderID,
                                     {
-                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/78gezo.jpg' },
+                                        image: { url: config.MENU_IMAGE_URL || 'https://res.cloudinary.com/dzfc5yopz/image/upload/file_00000000d82c722faaf51d22b7f83ade_l03mq3.png' },
                                         caption: selectedMenu.content,
                                         contextInfo: contextInfo
                                     },
