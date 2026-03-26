@@ -39,7 +39,7 @@ ${truncatedCode}
 \`\`\`
 ╰──────────⊷  
 ⚡ Full file sent below 📂  
-Powered By *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃³⁰³* 👑`;
+Powered By *𝐊𝐀𝐋𝐈-𝐌𝐃𝟏³⁰³* 👑`;
 
         // Send image with truncated source code
         await conn.sendMessage(from, { 
@@ -51,7 +51,7 @@ Powered By *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃³⁰³* 👑`;
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363423019441144@newsletter',
-                    newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
+                    newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                     serverMessageId: 143
                 }
             }
