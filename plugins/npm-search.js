@@ -33,7 +33,7 @@ cmd({
 
     // Create the response message
     const message = `
-*𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 NPM SEARCH*
+*𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 NPM SEARCH*
 *🔰 NPM PACKAGE:* ${packageName}
 *📄 DESCRIPTION:* ${description}
 *⏸️ LAST VERSION:* ${latestVersion}
