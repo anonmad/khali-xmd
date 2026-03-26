@@ -5,7 +5,7 @@ const config = require('../config');
 cmd({
     pattern: "uptime",
     alias: ["runtime", "up"],
-    desc: "Live uptime with 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 style",
+    desc: "Live uptime with 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 style",
     category: "main",
     react: "⏱️",
     filename: __filename
@@ -14,7 +14,7 @@ cmd({
 
         // First message
         let sent = await conn.sendMessage(from, {
-            text: "⏳ *𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 starting uptime…*"
+            text: "⏳ *𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 starting uptime…*"
         }, { quoted: mek });
 
         // Run for 60 seconds (1 minute)
@@ -24,7 +24,7 @@ cmd({
 
             const text = `
 *╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-*│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌*
+*│ ╌─̇─̣⊰ 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 ⊱┈─̇─̣╌*
 *│─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣*
 *│❀ ⏱️ 𝐔𝐩𝐭𝐢𝐦𝐞:* ${up}
 *│❀ 🤖 𝐁𝐨𝐭:* ${config.BOT_NAME}
@@ -32,7 +32,7 @@ cmd({
 *│❀ ⚙️ 𝐌𝐨𝐝𝐞:* ${config.MODE}
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
 
-> 📌 ᴘᴏᴡᴇʀ ʙʏ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃
+> 📌 ᴘᴏᴡᴇʀ ʙʏ 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏
 `;
 
             await conn.relayMessage(
@@ -55,7 +55,7 @@ cmd({
         console.error("UPTIME ERROR:", e);
         reply(`
 *╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-*│ ╌─̇─̣⊰ 𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃 ⊱┈─̇─̣╌*
+*│ ╌─̇─̣⊰ 𝐊𝐀𝐋𝐈-𝐌𝐃𝟏 ⊱┈─̇─̣╌*
 *│❌ 𝐔𝐩𝐭𝐢𝐦𝐞 𝐄𝐫𝐫𝐨𝐫*
 *│⏳ Please try again later*
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
