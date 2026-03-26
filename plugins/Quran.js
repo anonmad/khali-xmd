@@ -67,7 +67,7 @@ ${translatedTafsirEnglish.text}`;
           isForwarded: true,   
           forwardedNewsletterMessageInfo: {
             newsletterJid: '120363423571792427@newsletter', 
-            newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ', 
+            newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏', 
             serverMessageId: 143
           }
         }
@@ -457,7 +457,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
