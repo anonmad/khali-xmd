@@ -56,7 +56,7 @@ async (conn, mek, m, { from, sender, pushname, reply }) => {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423019441144@newsletter',
-                        newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
@@ -128,7 +128,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/78gezo.jpg` },
+                image: { url: `https://res.cloudinary.com/dzfc5yopz/image/upload/file_00000000d82c722faaf51d22b7f83ade_l03mq3.png` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
@@ -136,7 +136,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423019441144@newsletter',
-                        newsletterName: "𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃",
+                        newsletterName: "𝐊𝐀𝐋𝐈-𝐌𝐃𝟏",
                         serverMessageId: 143
                     }
                 }
@@ -194,15 +194,15 @@ async (conn, mek, m, { from, quoted, reply }) => {
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/78gezo.jpg` },
+                image: { url: `https://res.cloudinary.com/dzfc5yopz/image/upload/file_00000000d82c722faaf51d22b7f83ade_l03mq3.png` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: 'https://files.catbox.moe/78gezo.jpg@newsletter',
-                        newsletterName: '𝚳𝐒𝚵𝐋𝚫-𝐂𝚮𝐔𝚰-𝚾𝚳𝐃',
+                        newsletterJid: 'https://res.cloudinary.com/dzfc5yopz/image/upload/file_00000000d82c722faaf51d22b7f83ade_l03mq3.png@newsletter',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 144
                     }
                 }
@@ -277,7 +277,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/qj4dc0.jpg` },
+                image: { url: `https://res.cloudinary.com/dzfc5yopz/image/upload/file_00000000d82c722faaf51d22b7f83ade_l03mq3.png` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
@@ -285,7 +285,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
@@ -363,7 +363,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
@@ -430,7 +430,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
@@ -501,7 +501,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
@@ -553,7 +553,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
@@ -612,7 +612,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
@@ -673,7 +673,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
@@ -742,7 +742,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
@@ -801,7 +801,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363423571792427@newsletter',
-                        newsletterName: 'ᗩᗪᗴᗴᒪ-᙭ᗰᗪ',
+                        newsletterName: '𝐊𝐀𝐋𝐈-𝐌𝐃𝟏',
                         serverMessageId: 143
                     }
                 }
