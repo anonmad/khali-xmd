@@ -4,9 +4,9 @@
   "description": "A WhatsApp Bot Created By kali-os",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name khali-md1",
-    "stop": "pm2 stop khali-md1",
-    "restart": "pm2 restart khali-md1"
+    "start": "pm2 start index.js --deep-monitoring --attach --name mselachui-md",
+    "stop": "pm2 stop mselachui-md",
+    "restart": "pm2 restart mselachui-md"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "v7.0.0-rc.6",
