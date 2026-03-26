@@ -576,7 +576,7 @@ async function connectToWA() {
         
         conn = makeWASocket({
             logger: P({ level: 'silent' }),
-            printQRInTerminal: false,
+            printQRInTerminal: true,
             browser: Browsers.macOS("Firefox"),
             syncFullHistory: false,
             auth: state,
@@ -610,8 +610,6 @@ async function connectToWA() {
             
             if (qr) {
                 console.log("📱 QR Code received - Scan with WhatsApp");
-                qrcode.generate(qr, { small: true });
-                console.log("💡 After scanning, session will be auto-saved!");
             }
             
             if (connection === 'connecting') {
